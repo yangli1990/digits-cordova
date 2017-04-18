@@ -26,7 +26,7 @@ In your index.html page
   <script type="text/javascript" src="bower_components/digitsCordova.js"></script>
 ```
 
-##Usage
+## Usage
 
 ```html
   <button onClick="openDigits()">Sign up with digits</button>
@@ -53,7 +53,7 @@ In your index.html page
   }
 ```
 
-##API
+## API
 ```javascript
 new DigitsCordova('consumerKey', 'http://yourUrl', options)
   .successCallback(loginCallback)  //When user successfully logs in
@@ -61,14 +61,14 @@ new DigitsCordova('consumerKey', 'http://yourUrl', options)
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
 ```  
   
-###Options include
-####autoFill {boolean}(default: true)
+### Options include
+#### autoFill {boolean}(default: true)
   By setting this true, and if com.simonmacdonald.telephonenumber is installed properly then the app will automatically fill the phone number and country code
   
-####smsIntercept {boolean}(default: true)
+#### smsIntercept {boolean}(default: true)
   By setting this true, and if com.rjfun.cordova.sms is installed properly the app will intercept sms after user has requested for one.  This will turn itself off when digits is closed.
   
-####autoProceed {boolean}(default: true)
+#### autoProceed {boolean}(default: true)
   By setting this true and if sms is being intercepted then it will automatically confirm and close digits when the sms is intercepted properly.
   
 *Additionally, if you don't include the phonenumber and sms cordova packages, these will not work.
@@ -79,7 +79,7 @@ new DigitsCordova('consumerKey', 'http://yourUrl', {autoFill: false, smsIntercep
   .failCallback(failedLoginCallback) //When user failed to login
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
 ```  
-##License
+## License
 The MIT License (MIT)
 
 Copyright (c) 2015 Yang Li
